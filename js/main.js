@@ -38,19 +38,3 @@ invia.addEventListener('click',
 
 )
 
-
-/* var email = prompt('inserisci la tua mail');
-console.log(email); */
-
-    
-
-/* invia = document.getElementById("invia");
-invia.addEventListener ('click',
-    function() {
-        email = document.getElementById("email").value;
-        console.log(email);
-    }
-
-)
-
-/* if listaMail.includes() */

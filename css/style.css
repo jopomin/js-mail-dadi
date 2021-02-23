@@ -3,3 +3,99 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background: #076b28;
+    background: linear-gradient(137deg, rgba(7,107,40,1) 0%, rgba(11,70,42,1) 100%);
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+
+#mailbox {
+    width: 500px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 3px 5px 6px rgba(0, 0, 0, 0.4);
+    padding: 40px 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#mailbox label {
+    display: block;
+    color: #076b28;
+    font-weight: 800;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+#mailbox button {
+    background: #8d1515;
+    box-shadow: 2px 1px 1px rgba(0, 0, 0, 0.4);
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 25px;
+}
+
+#mailbox input {
+    padding: 5px;
+    border-width: 2px;
+    border-color: #076b28;
+    border-radius: 7px;
+    border-style: solid;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+#mailbox input:focus {
+    outline: none;
+    background: #8d1515;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+#diceboard {
+    width: 500px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 3px 5px 6px rgba(0, 0, 0, 0.4);
+    padding: 40px 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont {
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    visibility: hidden;
+}
