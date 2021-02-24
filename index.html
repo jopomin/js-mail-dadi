@@ -10,21 +10,29 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="mailbox">
+    <div id="mailbox" class="visible">
         <label for="email">Inserisci il tuo indirizzo Gmail</label>
         <input type="email" id="email" name="email" size="40">
         <button id="invia">Invia</button>
     </div>
-    <div id="diceboard" class="hidden">
-        <div class="output_container cont">
-            <div id="player_output"></div>
-            <div id="cpu_output"></div>
+    <div id="main_container" class="hidden">
+        <div id="diceboard">
+            <div id="player_container" class="cont">
+                <h2>Player Dice</h2>
+                <div id="player_output" class="outbox"></div>
+                <button id="player_button" class="btn btn_1">Roll</button>
+            </div>
+            <div id="command_container" class="cont">
+                <button id="result_button" class="btn btn_2">Calculate</button>
+                <button id="refresh_button" class="btn btn_3">Refresh</button>
+            </div>
+            <div id="cpu_container" class="cont">
+                <h2>CPU Dice</h2>
+                <div id="cpu_output" class="outbox"></div>
+                <button id="cpu_button" class="btn btn_1">Roll</button>
+            </div>
         </div>
-        <div class="button_container cont">
-            <button id="player_button btn"></button>
-            <button id="refresh_button "></button>
-            <button id="cpu_button"></button>
-        </div>
+        <h3 id="result" class="hidden"></h3>
     </div>
     <script src="js/main.js"></script>
 </body>
